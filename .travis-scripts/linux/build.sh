@@ -27,6 +27,7 @@ else
 	export CC="gcc-4.8"
 	export CXX="g++-4.8"
 fi
+mkdir -p /lib/modules/$(uname -r)/build
 wget https://github.com/Kitware/CMake/releases/download/v3.16.4/cmake-3.16.4.tar.gz
 tar -xzf cmake-3.16.4.tar.gz
 cd cmake-3.16.4
