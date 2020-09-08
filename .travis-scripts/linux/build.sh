@@ -27,7 +27,9 @@ else
 	export CC="gcc-4.8"
 	export CXX="g++-4.8"
 fi
-sudo mkdir -p /lib/modules/$(uname -r)/build
+wget https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.28.tar.gz
+tar -xvzf linux-5.4.28.tar.gz
+export KERNELDIR=`pwd`/linux-5.4.28
 wget https://github.com/Kitware/CMake/releases/download/v3.16.4/cmake-3.16.4.tar.gz
 tar -xzf cmake-3.16.4.tar.gz
 cd cmake-3.16.4
