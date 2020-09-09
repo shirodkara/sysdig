@@ -29,7 +29,7 @@ else
 fi
 
 if [[ "$arch" == "ppc64le" ]]; then
-	sudo apt-get install linux-headers-generic
+	sudo apt-get install linux-headers-generic libelf-dev
 	export KERNELDIR=/lib/modules/$(ls /lib/modules/|sort|head -1)/build
 fi
 
