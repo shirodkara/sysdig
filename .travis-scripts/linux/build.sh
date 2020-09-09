@@ -29,6 +29,7 @@ else
 fi
 
 if [[ "$arch" == "ppc64le" ]]; then
+	sudo apt-get install linux-headers-generic
 	export KERNELDIR=/lib/modules/$(ls /lib/modules/|sort|head -1)/build
 fi
 
