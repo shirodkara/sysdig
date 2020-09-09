@@ -28,7 +28,7 @@ else
 	export CXX="g++-4.8"
 fi
 
-if [[ "$arch" == "s390x" ]]; then
+if [[ "$arch" == "ppc64le" ]]; then
 	export KERNELDIR=/lib/modules/$(ls /lib/modules/|sort|head -1)/build
 fi
 
